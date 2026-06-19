@@ -25,7 +25,6 @@
     "expo-status-bar": "~1.12.1",
     "react": "18.2.0",
     "react-native": "0.74.0",
-    "react-native-async-storage": "@react-native-async-storage/async-storage",
     "react-native-countdown-circle-timer": "^3.2.1",
     "react-native-modal": "^13.0.1",
     "react-native-paper": "^5.12.3",
