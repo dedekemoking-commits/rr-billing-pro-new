@@ -1,5 +1,16 @@
 [
   {
+    "id": "TRX-MRDV0EKFOW7GK",
+    "waktu": "2026-07-09T18:48:00.442Z",
+    "kasir": "rrgaming",
+    "kota": "KOTA 1",
+    "paket": "Pesanan Tambahan",
+    "pesanan": {
+      "Es Jeruk": 1
+    },
+    "total": 6000
+  },
+  {
     "id": "TRX-MRDV0B4VNM6ML",
     "waktu": "2026-07-09T18:47:55.992Z",
     "kasir": "rrgaming",
