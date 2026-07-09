@@ -1,5 +1,19 @@
 [
   {
+    "id": "TRX-MRDQKKSNUP0QX",
+    "waktu": "2026-07-09T16:43:43.553Z",
+    "kasir": "rrgaming",
+    "kota": "KOTA 1",
+    "paket": "Pesanan Tambahan",
+    "pesanan": {
+      "Indomie Goreng": 1,
+      "Kentang Goreng": 1,
+      "Air Mineral": 1,
+      "Susu Coklat": 1
+    },
+    "total": 31000
+  },
+  {
     "id": "TRX-MRDQJZGK31J89",
     "waktu": "2026-07-09T16:43:15.895Z",
     "kasir": "rrgaming",
