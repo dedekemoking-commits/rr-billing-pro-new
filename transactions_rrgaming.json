@@ -1,10 +1,11 @@
 [
   {
-    "waktu": "2026-07-08T12:51:57.641Z",
+    "id": "TRX-MRDQ0KNZ804QX",
+    "waktu": "2026-07-09T16:28:10.258Z",
     "kasir": "rrgaming",
     "kota": "KOTA 1",
-    "paket": "30 Menit",
+    "paket": "Main Bebas",
     "pesanan": {},
-    "total": 5000
+    "total": 10000
   }
 ]
