@@ -1,5 +1,18 @@
 [
   {
+    "id": "TRX-MRDQPD1WP3HXQ",
+    "waktu": "2026-07-09T16:47:26.798Z",
+    "kasir": "rrgaming",
+    "kota": "KOTA 1",
+    "paket": "Pesanan Tambahan",
+    "pesanan": {
+      "Nasi Goreng": 1,
+      "Es Teh Manis": 1,
+      "Air Mineral": 1
+    },
+    "total": 23000
+  },
+  {
     "id": "TRX-MRDQO8K2CSA6A",
     "waktu": "2026-07-09T16:46:34.307Z",
     "kasir": "rrgaming",
