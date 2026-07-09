@@ -1,56 +1,11 @@
 [
   {
-    "id": "TRX-MRDQPD1WP3HXQ",
-    "waktu": "2026-07-09T16:47:26.798Z",
+    "id": "TRX-MRDV0461EX383",
+    "waktu": "2026-07-09T18:47:46.958Z",
     "kasir": "rrgaming",
     "kota": "KOTA 1",
-    "paket": "Pesanan Tambahan",
-    "pesanan": {
-      "Nasi Goreng": 1,
-      "Es Teh Manis": 1,
-      "Air Mineral": 1
-    },
-    "total": 23000
-  },
-  {
-    "id": "TRX-MRDQO8K2CSA6A",
-    "waktu": "2026-07-09T16:46:34.307Z",
-    "kasir": "rrgaming",
-    "kota": "KOTA 1",
-    "paket": "2 Jam PS4",
+    "paket": "30 Menit",
     "pesanan": {},
-    "total": 12000
-  },
-  {
-    "id": "TRX-MRDQKKSNUP0QX",
-    "waktu": "2026-07-09T16:43:43.553Z",
-    "kasir": "rrgaming",
-    "kota": "KOTA 1",
-    "paket": "Pesanan Tambahan",
-    "pesanan": {
-      "Indomie Goreng": 1,
-      "Kentang Goreng": 1,
-      "Air Mineral": 1,
-      "Susu Coklat": 1
-    },
-    "total": 31000
-  },
-  {
-    "id": "TRX-MRDQJZGK31J89",
-    "waktu": "2026-07-09T16:43:15.895Z",
-    "kasir": "rrgaming",
-    "kota": "KOTA 1",
-    "paket": "Main Bebas",
-    "pesanan": {},
-    "total": 10000
-  },
-  {
-    "id": "TRX-MRDQ0KNZ804QX",
-    "waktu": "2026-07-09T16:28:10.258Z",
-    "kasir": "rrgaming",
-    "kota": "KOTA 1",
-    "paket": "Main Bebas",
-    "pesanan": {},
-    "total": 10000
+    "total": 5000
   }
 ]
