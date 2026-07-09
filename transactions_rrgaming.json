@@ -1,5 +1,16 @@
 [
   {
+    "id": "TRX-MRDV0B4VNM6ML",
+    "waktu": "2026-07-09T18:47:55.992Z",
+    "kasir": "rrgaming",
+    "kota": "KOTA 1",
+    "paket": "Pesanan Tambahan",
+    "pesanan": {
+      "Air Mineral": 1
+    },
+    "total": 3000
+  },
+  {
     "id": "TRX-MRDV0461EX383",
     "waktu": "2026-07-09T18:47:46.958Z",
     "kasir": "rrgaming",
