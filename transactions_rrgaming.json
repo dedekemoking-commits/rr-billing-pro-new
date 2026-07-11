@@ -1,5 +1,17 @@
 [
   {
+    "id": "TRX-MRGNHTFNHDQXY",
+    "waktu": "2026-07-11T17:40:54.466Z",
+    "kasir": "rrgaming",
+    "kota": "KOTA 1",
+    "paket": "Pesanan Tambahan",
+    "pesanan": {
+      "Es Jeruk": 1,
+      "Kopi Hitam": 2
+    },
+    "total": 18000
+  },
+  {
     "id": "TRX-MRGNHO56U0QNC",
     "waktu": "2026-07-11T17:40:47.595Z",
     "kasir": "rrgaming",
