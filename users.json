@@ -2,11 +2,5 @@
   "rrgaming": {
     "passwordHash": "5db80d232bc072d86dd3adfa2a677d0cda2b92338eecd75e1b0e6bb1894ea70f",
     "role": "admin"
-  },
-  "dedek": {
-    "passwordHash": "5db80d232bc072d86dd3adfa2a677d0cda2b92338eecd75e1b0e6bb1894ea70f",
-    "role": "kasir",
-    "email": "",
-    "dibuat": "2026-07-07T03:40:43.697Z"
   }
 }
