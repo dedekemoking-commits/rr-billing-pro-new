@@ -1,0 +1,30 @@
+[
+  {
+    "waktu": "2026-07-06T23:38:06.357Z",
+    "kasir": "dedek",
+    "kota": "KOTA 1",
+    "paket": "Pesanan Tambahan",
+    "pesanan": {
+      "Nasi Goreng": 1
+    },
+    "total": 15000
+  },
+  {
+    "waktu": "2026-07-06T23:37:57.951Z",
+    "kasir": "dedek",
+    "kota": "KOTA 1",
+    "paket": "Pesanan Tambahan",
+    "pesanan": {
+      "Kentang Goreng": 1
+    },
+    "total": 12000
+  },
+  {
+    "waktu": "2026-07-06T23:37:45.566Z",
+    "kasir": "dedek",
+    "kota": "KOTA 1",
+    "paket": "Main Bebas",
+    "pesanan": {},
+    "total": 10000
+  }
+]
