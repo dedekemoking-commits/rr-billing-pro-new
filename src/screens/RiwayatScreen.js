@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import {
   View, Text, FlatList, TouchableOpacity, StyleSheet, Alert,
 } from 'react-native';
@@ -15,8 +15,15 @@ export default function RiwayatScreen() {
   const loadTransaksi   = useStore(s => s.loadTransaksi);
   const bersihkan       = useStore(s => s.bersihkanTransaksi);
   const currentUser     = useStore(s => s.currentUser);
+  const [syncing, setSyncing] = useState(false);
 
   useEffect(() => { loadTransaksi(); }, []);
+
+  const syncCloud = async () => {
+    setSyncing(true);
+    await loadTransaksi();
+    setSyncing(false);
+  };
 
   const totalPendapatan = transaksiList.reduce((s, t) => s + (t.total || 0), 0);
 
@@ -63,17 +70,16 @@ export default function RiwayatScreen() {
   };
 
   const renderItem = ({ item, index }) => {
-    const pesananStr = Object.entries(item.pesanan || {})
-      .map(([nm, q]) => `${nm}×${q}`).join(', ') || '—';
+    const pesananArr = Object.entries(item.pesanan || {});
     return (
       <View style={[s.row, index % 2 === 0 && { backgroundColor: C.CARD }]}>
         <View style={s.rowLeft}>
           <Text style={s.waktu}>{formatWaktu(item.waktu)}</Text>
-          <Text style={s.kota}>{item.kota}</Text>
+          <Text style={s.tvLabel}>{item.kota}</Text>
           <Text style={s.paket}>{item.paket}</Text>
-          {pesananStr !== '—' && (
-            <Text style={s.pesanan}>{pesananStr}</Text>
-          )}
+          {pesananArr.map(([nm, q]) => (
+            <Text key={nm} style={s.pesanan}>🍽 {nm} ×{q}</Text>
+          ))}
         </View>
         <View style={s.rowRight}>
           <Text style={s.total}>{fmtRp(item.total)}</Text>
@@ -108,6 +114,10 @@ export default function RiwayatScreen() {
           <Icon name="file-export" size={16} color={C.GREEN} />
           <Text style={s.btnExportTxt}>Export CSV</Text>
         </TouchableOpacity>
+        <TouchableOpacity style={s.btnSync} onPress={syncCloud} disabled={syncing}>
+          <Icon name="cloud-sync" size={16} color={C.ACCENT} />
+          <Text style={s.btnSyncTxt}>{syncing ? '...' : 'Sync Cloud'}</Text>
+        </TouchableOpacity>
         <TouchableOpacity style={s.btnHapus} onPress={konfirmasiHapus}>
           <Icon name="trash-can" size={16} color={C.RED} />
           <Text style={s.btnHapusTxt}>Bersihkan</Text>
@@ -129,7 +139,7 @@ export default function RiwayatScreen() {
       ) : (
         <FlatList
           data={transaksiList}
-          keyExtractor={(_, i) => String(i)}
+          keyExtractor={item => item.id || String(Math.random())}
           renderItem={renderItem}
         />
       )}
@@ -163,6 +173,12 @@ const s = StyleSheet.create({
     backgroundColor: '#1A3A1A',
   },
   btnExportTxt: { color: C.GREEN, ...FONTS.sub },
+  btnSync: {
+    borderRadius: 8, paddingHorizontal: 10, paddingVertical: 8,
+    borderWidth: 1, borderColor: C.ACCENT, backgroundColor: C.BTN,
+    alignItems: 'center', justifyContent: 'center',
+  },
+  btnSyncTxt: { color: C.ACCENT, ...FONTS.small },
   btnHapus: {
     flex: 1, flexDirection: 'row', alignItems: 'center', justifyContent: 'center', gap: 6,
     borderWidth: 1, borderColor: C.RED, borderRadius: 10, paddingVertical: 10,
@@ -181,9 +197,9 @@ const s = StyleSheet.create({
   rowLeft:  { flex: 2 },
   rowRight: { flex: 1, alignItems: 'flex-end', justifyContent: 'center' },
   waktu:   { ...FONTS.small, color: C.MUTED },
-  kota:    { ...FONTS.label, color: C.ACCENT, fontWeight: 'bold' },
+  tvLabel: { ...FONTS.label, color: C.ACCENT, fontWeight: 'bold' },
   paket:   { ...FONTS.small, color: C.YELLOW },
-  pesanan: { ...FONTS.small, color: C.MUTED },
+  pesanan: { ...FONTS.small, color: C.MUTED, marginLeft: 8 },
   total:   { ...FONTS.sub, color: C.GREEN, fontSize: 13 },
   kasir:   { ...FONTS.small, color: C.MUTED },
   empty:   { flex: 1, alignItems: 'center', justifyContent: 'center', gap: 12 },

@@ -22,21 +22,46 @@ export const FONTS = {
   small:  { fontFamily: 'monospace', fontSize: 10 },
   label:  { fontFamily: 'monospace', fontSize: 11 },
   timer:  { fontFamily: 'monospace', fontSize: 28, fontWeight: 'bold', letterSpacing: 2 },
+  code:   { fontFamily: 'monospace', fontSize: 12 },
 };
 
 export function fmtRp(n) {
   return 'Rp ' + Number(n).toLocaleString('id-ID');
 }
 
+export const JENIS_PS = ['PS3', 'PS4', 'PS5'];
+
 export const DEFAULT_PAKET = {
-  '30 Menit':   5000,
-  '1 Jam':     10000,
-  '2 Jam':     18000,
-  '3 Jam':     25000,
-  '5 Jam':     35000,
-  'Overnight': 50000,
-  'Main Bebas':    0,
-  'Reguler':   12000,
+  PS3: {
+    '30 Menit':   5000,
+    '1 Jam':     10000,
+    '2 Jam':     18000,
+    '3 Jam':     25000,
+    '5 Jam':     35000,
+    'Overnight': 50000,
+    'Main Bebas':    0,
+    'Reguler':   12000,
+  },
+  PS4: {
+    '30 Menit':   7000,
+    '1 Jam':     15000,
+    '2 Jam':     25000,
+    '3 Jam':     35000,
+    '5 Jam':     50000,
+    'Overnight': 70000,
+    'Main Bebas':    0,
+    'Reguler':   15000,
+  },
+  PS5: {
+    '30 Menit':  10000,
+    '1 Jam':     20000,
+    '2 Jam':     35000,
+    '3 Jam':     50000,
+    '5 Jam':     75000,
+    'Overnight': 100000,
+    'Main Bebas':    0,
+    'Reguler':   20000,
+  },
 };
 
 export const DEFAULT_MAKANAN = {

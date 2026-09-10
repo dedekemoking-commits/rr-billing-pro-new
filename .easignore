@@ -1,0 +1,62 @@
+# EAS Build ignore file
+# Files and folders listed here will not be uploaded to EAS Build
+
+# Build artifacts
+build/
+dist/
+.expo/
+*.apk
+*.aab
+
+# Git
+.git/
+.gitignore
+.gitattributes
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.iml
+.DS_Store
+Thumbs.db
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Dependencies caches (but keep node_modules for native module compilation)
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Gradle cache (rebuilt on server)
+android/.gradle/
+android/build/
+android/app/build/
+android/.idea/
+**/.gradle/
+
+# Maven cache
+**/.m2/
+
+# Temporary files
+*.tmp
+.env.local
+.env.*.local
+
+# Test & Documentation
+coverage/
+docs/
+test/
+__tests__/
+
+# Old APK files
+RR-Billing*.apk
+app-debug.apk
+app-release*.apk
+
+
