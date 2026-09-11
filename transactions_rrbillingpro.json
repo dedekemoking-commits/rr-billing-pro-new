@@ -1,0 +1,38 @@
+[
+  {
+    "id": "TRX-MTVI99EAKIL62",
+    "waktu": "2026-09-10T12:30:14.443Z",
+    "kasir": "rrbillingpro",
+    "kota": "KOTA 3",
+    "paket": "Main Bebas",
+    "pesanan": {},
+    "total": 15000
+  },
+  {
+    "id": "TRX-MTVI8MXKJ6BFK",
+    "waktu": "2026-09-10T12:29:45.353Z",
+    "kasir": "rrbillingpro",
+    "kota": "KOTA 2",
+    "paket": "5 Jam",
+    "pesanan": {},
+    "total": 75000
+  },
+  {
+    "id": "TRX-MTVI8H87EKDTW",
+    "waktu": "2026-09-10T12:29:37.957Z",
+    "kasir": "rrbillingpro",
+    "kota": "KOTA 1",
+    "paket": "30 Menit",
+    "pesanan": {},
+    "total": 5000
+  },
+  {
+    "id": "TRX-MTVI6KNR45BQ1",
+    "waktu": "2026-09-10T12:28:09.094Z",
+    "kasir": "rrbillingpro",
+    "kota": "KOTA 1",
+    "paket": "30 Menit",
+    "pesanan": {},
+    "total": 5000
+  }
+]
